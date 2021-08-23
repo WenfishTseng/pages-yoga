@@ -1,113 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>瑜珈</title>
+    <!-- material icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+    <link rel="stylesheet" href="./assets/style/all.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container">
+        <h1>
+          <a href="#" class="logo main-logo d-block d-lg-none navbar-brand"
+            >DOYOGA</a
+          >
+        </h1>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+          aria-controls="navbarToggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div
+          class="
+            d-lg-flex
+            justify-content-lg-between
+            align-items-lg-center
+            w-100
+            collapse
+          "
+          id="navbarToggle"
+        >
+          <h1>
+            <a href="#" class="logo main-logo d-none d-lg-block navbar-brand"
+              >DOYOGA</a
+            >
+          </h1>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link px-lg-4" href="#">課程介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link px-lg-4" href="#">瑜珈空間</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link px-lg-4" href="#">當月課表</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="my-lg-3">
+            <button
+              class="btn btn-outline-primary border-radius-lg link-hover-white"
+              type="button"
+            >
+              立即預約
+            </button>
+            <button
+              class="
+                btn btn-outline-primary
+                border-radius-lg
+                link-hover-white
+                ms-lg-4
+              "
+              type="button"
+            >
+              聯絡我們
+            </button>
           </form>
         </div>
       </div>
     </nav>
 
     
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 offset-lg-1">
+          <h3 class="fs-6">健身輕時尚</h3>
+          <h1 class="fw-medium">DOYOGA，做你的瑜珈</h1>
+          <h2 class="fs-4 mb-4">多給自己一點時間享受靜謐，傾聽內心的聲音。</h2>
+          <form>
+            <a
+              class="btn btn-light btn-light-hover link-hover-white"
+              type="button"
+            >
+              立即預約
+            </a>
+            <a
+              class="btn btn-secondary link-white link-hover-white ms-2"
+              type="button"
+            >
+              課程介紹
+            </a>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+  <section>
+    <div class="container pt-9 pb-13 pt-lg-11 pb-lg-14">
+      <div class="row">
+        <div class="col text-center mb-6 mb-lg-9">
+          <h2 class="fs-3 fw-medium">感受身心，活在當下</h2>
+          <h3 class="fs-5">DOYOGA 可以帶給你...</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="img-card">
+            <img
+              class="img-card-bg"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1593810450967-f9c42742e326.jpeg?raw=true"
+              alt="yoga"
+            />
+            <div class="img-card-body">
+              <h3 class="img-card-title">整體健身</h3>
+              <p>
+                每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="img-card">
+            <img
+              class="img-card-bg"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1593810451137-5dc55105dace.jpeg?raw=true"
+              alt="yoga"
+            />
+            <div class="img-card-body">
+              <h3 class="img-card-title">減壓放鬆</h3>
+              <p>
+                每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-card">
+            <img
+              class="img-card-bg"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1599901860904-17e6ed7083a0.jpeg?raw=true"
+              alt="yoga"
+            />
+            <div class="img-card-body">
+              <h3 class="img-card-title">局部雕塑</h3>
+              <p>
+                幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light">
+    <div class="container pt-9 pb-13 pt-lg-11 pb-lg-14">
+      <div class="row position-relative">
+        <!-- 大圖 -->
+        <div class="d-none d-lg-block col-lg-6 position-absolute start-0 top-0">
+          <img
+            class="border-radius-lg h-none superCard"
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg?raw=true"
+            alt="bg"
+          />
+        </div>
+        <!-- 區域title -->
+        <div class="offset-lg-6 col-lg-6">
+          <h2 class="fs-3 text-primary text-center pt-lg-4">
+            頂尖師資、專業教學
+          </h2>
+          <p class="text-secondary d-flex justify-content-center mb-6">
+            強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。
+          </p>
+        </div>
+      </div>
+      <!-- 老師訊息 -->
+      <div class="row">
+        <div
+          class="
+            zIndexHigh
+            offset-md-1
+            col-md-11
+            offset-lg-5
+            col-lg-7
+            bg-white
+            border-radius-lg
+            d-flex
+            align-items-center
+            p-4
+            px-md-13
+            py-md-11
+            mb-4
+          "
+        >
+          <div class="flex-shrink-0">
+            <img
+              class="msg-card-img"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-1.png?raw=true"
+              alt="teacher"
+            />
+          </div>
+          <div class="flex-grow-1 ms-5">
+            <h3 class="fs-6 mb-1">Carol Tang 老師</h3>
+            <p class="mb-1">教學經歷 10 年</p>
+            <p class="mb-0">
+              瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="
+            offset-md-3
+            col-md-9
+            offset-lg-6
+            col-lg-6
+            bg-white
+            border-radius-lg
+            d-flex
+            align-items-center
+            p-4
+            px-md-9
+            py-md-6
+            mb-4
+          "
+        >
+          <div class="flex-shrink-0">
+            <img
+              class="msg-card-img"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-2.png?raw=true"
+              alt="teacher"
+            />
+          </div>
+          <div class="flex-grow-1 ms-5">
+            <h3 class="fs-6">Kanae 老師</h3>
+            <p class="mb-0">教學經歷 10 年</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-0">
+        <div
+          class="
+            offset-md-3
+            col-md-9
+            offset-lg-6
+            col-lg-6
+            bg-white
+            border-radius-lg
+            d-flex
+            align-items-center
+            p-4
+            px-md-9
+            py-md-6
+            mb-4 mb-lg-12
+          "
+        >
+          <div class="flex-shrink-0">
+            <img
+              class="msg-card-img"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-3.png?raw=true"
+              alt="teacher"
+            />
+          </div>
+          <div class="flex-grow-1 ms-5">
+            <h3 class="fs-6">Asa Ifrit 老師</h3>
+            <p class="mb-0">教學經歷 10 年</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container py-md-14 py-13">
+      <div class="row">
+        <div
+          class="col-md-6 order-md-2 d-flex flex-column justify-content-center"
+        >
+          <h2 class="fs-3 fw-medium text-primary mb-1">舒適空間、靜心放鬆</h2>
+          <h3 class="fs-5 text-secondary mb-4 mb-lg-6">
+            我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。
+          </h3>
+          <a
+            class="
+              btn btn-link
+              link-primary
+              px-0
+              mb-4
+              d-flex
+              align-items-center
+            "
+            href="#"
+            >環境介紹
+            <span class="ms-2 material-icons"> trending_flat </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 order-md-0">
+          <img
+            class="img-fluid h-100 border-radius-lg"
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg?raw=true"
+            alt="yoga"
+          />
+        </div>
+        <div class="col-6 col-md-2 d-flex flex-column order-md-1">
+          <div class="h-md-50 pb-md-3">
+            <img
+              class="img-fluid border-radius-lg w-100 h-100"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/white%20round%20table%20near%20brown%20wooden%20chair.jpg?raw=true"
+              alt="yoga"
+            />
+          </div>
+
+          <div class="d-none d-md-block h-md-50 pt-md-3">
+            <img
+              class="img-fluid border-radius-lg w-100 h-100"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20blue%20denim%20jeans%20doing%20yoga.jpg?raw=true"
+              alt="yoga"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light py-md-14 py-13">
+    <div class="container">
+      <div class="row">
+        <div
+          class="offset-lg-1 col-lg-5 d-flex flex-column justify-content-center"
+        >
+          <h2 class="fs-3 fw-medium text-primary mb-1">精心設計、課程多元</h2>
+          <h3 class="fs-5 text-secondary mb-4 mb-lg-6">
+            教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。
+          </h3>
+          <a
+            class="
+              btn btn-link
+              link-primary
+              px-0
+              mb-4
+              d-flex
+              align-items-center
+            "
+            href="#"
+            >課程介紹
+            <span class="ms-2 material-icons"> trending_flat </span>
+          </a>
+        </div>
+        <div class="col-6">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="border-radius-lg h-100"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg?raw=true"
+                    alt="yoga"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="border-radius-lg h-100"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga.jpg?raw=true"
+                    alt="yoga"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="border-radius-lg h-100"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true"
+                    alt="yoga"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="border-radius-lg h-100"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
+                    alt="yoga"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 
-    <footer class="footer">
-      footer
-    </footer>
+    <footer class="footer border border-1 border-warning">footer</footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <!-- Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>

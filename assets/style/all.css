@@ -15110,6 +15110,9 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  width: 96px;
+  height: 31px;
+  background-image: url("../images/footer-logo.png");
 }
 
 .main-logo {
@@ -15262,6 +15265,13 @@ img {
 @media (min-width: 768px) {
   .hero {
     height: 36.375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyRight {
+    margin-top: -2.5rem;
+    padding-bottom: 2rem;
   }
 }
 

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reservation - Step2 - 瑜珈</title>
+    <!-- material icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+    <!-- vanillajs -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/style/all.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <h1>
+          <a
+            href="newindex.html"
+            class="logo main-logo d-block d-lg-none navbar-brand"
+            >DOYOGA</a
+          >
+        </h1>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+          aria-controls="navbarToggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="
+            d-lg-flex
+            justify-content-lg-between
+            align-items-lg-center
+            w-100
+            collapse
+          "
+          id="navbarToggle"
+        >
+          <h1>
+            <a
+              href="newindex.html"
+              class="logo main-logo d-none d-lg-block navbar-brand"
+              >DOYOGA</a
+            >
+          </h1>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="#">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="#">瑜珈空間</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="#">當月課表</a>
+            </li>
+          </ul>
+          <form class="my-lg-3">
+            <a
+              href="reservation.html"
+              class="btn btn-outline-primary border-radius-lg link-hover-white"
+              type="button"
+            >
+              立即預約
+            </a>
+            <button
+              class="
+                btn btn-outline-primary
+                border-radius-lg
+                link-hover-white
+                ms-lg-4
+              "
+              type="button"
+            >
+              聯絡我們
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    
+<main>
+  <!-- BTN TITLE TAB 列 -->
+  <section class="pt-14">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center text-primary fw-medium">立即預約</h2>
+        </div>
+      </div>
+      <div class="row pt-4 pb-9">
+        <div class="col-4 col-md-2 offset-md-3">
+          <a class="btn btn-light btn-radius w-100" href="#" role="button"
+            >選擇方案</a
+          >
+        </div>
+
+        <div class="col-4 col-md-2">
+          <a class="btn btn-light btn-radius w-100" href="#" role="button"
+            >填寫資料</a
+          >
+        </div>
+
+        <div class="col-4 col-md-2">
+          <a class="btn btn-light btn-radius w-100" href="#" role="button"
+            >完成預約</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-secondary text-center fs-5 pb-6">
+            <span class="text-info fs-6 pe-4">您選擇的是</span>首次體驗課程-基礎
+          </h3>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                1. 是否接觸過瑜珈?
+              </legend>
+              <div class="col-12 d-flex">
+                <div class="form-check pe-9">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="yoga"
+                    id="yoga1"
+                    value="yogatrue"
+                    checked
+                  />
+                  <label class="form-check-label" for="yoga1"> 是 </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="yoga"
+                    id="yoga2"
+                    value="yogafalse"
+                  />
+                  <label class="form-check-label" for="yoga2"> 否 </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                2. 想改善的生活問題?
+              </legend>
+              <div class="col-12 d-flex">
+                <div class="form-check me-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox1"
+                    name="life"
+                    value="checkbox1"
+                  />
+                  <label class="form-check-label" for="checkbox1"
+                    >肌耐力不足</label
+                  >
+                </div>
+                <div class="form-check me-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox2"
+                    name="life"
+                    value="checkbox2"
+                  />
+                  <label class="form-check-label" for="checkbox2"
+                    >柔軟度不佳</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox3"
+                    name="life"
+                    value="checkbox3"
+                  />
+                  <label class="form-check-label" for="checkbox3">壓力大</label>
+                </div>
+              </div>
+              <div class="col-12 d-flex">
+                <div class="form-check me-9">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox4"
+                    name="life"
+                    value="checkbox4"
+                  />
+                  <label class="form-check-label" for="checkbox4"
+                    >姿勢不正</label
+                  >
+                </div>
+                <div class="form-check me-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox5"
+                    name="life"
+                    value="checkbox5"
+                  />
+                  <label class="form-check-label" for="checkbox5"
+                    >睡眠品質差</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox6"
+                    name="life"
+                    value="checkbox6"
+                  />
+                  <label class="form-check-label" for="checkbox6"
+                    >注意力不足</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                3. 每週累積運動量約為多少？
+              </legend>
+              <div class="col-12 d-flex">
+                <div class="form-check pe-9">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="yoga"
+                    id="yoga1"
+                    value="yogatrue"
+                    checked
+                  />
+                  <label class="form-check-label" for="yoga1">
+                    150 分鐘以上
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="yoga"
+                    id="yoga2"
+                    value="yogafalse"
+                  />
+                  <label class="form-check-label" for="yoga2">
+                    75~150 分鐘
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 d-flex">
+                <div class="form-check pe-9">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="yoga"
+                    id="yoga1"
+                    value="yogatrue"
+                    checked
+                  />
+                  <label class="form-check-label" for="yoga1">
+                    30~75 分鐘
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="yoga"
+                    id="yoga2"
+                    value="yogafalse"
+                  />
+                  <label class="form-check-label" for="yoga2">
+                    30 分鐘以下
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                4. 上課預約報到日
+              </legend>
+              <div class="col-12">
+                <p>
+                  若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！
+                </p>
+              </div>
+              <div class="col-6">
+                <input type="text" placeholder="MM/DD/YYYY" name="datepicker" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+    <footer class="footer bg-primary">
+      <div class="container py-9">
+        <div class="row">
+          <div class="col-lg-8 mb-2 mb-lg-0">
+            <h2 class="text-white fs-3 fw-medium">
+              現在訂閱，獲得課程優惠碼！
+            </h2>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="input-group">
+              <input type="text" class="form-control fs-5""
+              placeholder="輸入您的電子信箱" />
+              <div
+                class="
+                  input-group-text
+                  btn btn-secondary
+                  text-white
+                  fs-5
+                  px-4
+                  py-2
+                "
+              >
+                訂閱
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border border-1 border-white" />
+
+      <div class="container pt-4">
+        <div class="d-flex justify-content-between">
+          <div><a class="logo d-block mb-1" href="#">DOYOGA</a></div>
+          <ul class="list-unstyled d-flex">
+            <li>
+              <a class="link-white d-block p-1" href="#"
+                ><i class="fab fa-facebook fs-4"></i
+              ></a>
+            </li>
+            <li>
+              <a class="link-white d-block p-1" href="#"
+                ><i class="fab fa-instagram fs-4"></i
+              ></a>
+            </li>
+            <li>
+              <a class="link-white d-block p-1" href="#"
+                ><i class="fab fa-line fs-4"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="list-unstyled">
+          <li>
+            <a class="link-white d-block pb-2 fw-light" href="#">課程介紹</a>
+          </li>
+          <li>
+            <a class="link-white d-block pb-2 fw-light" href="#">瑜珈空間</a>
+          </li>
+          <li>
+            <a class="link-white d-block pb-2 fw-light" href="#">當月課表</a>
+          </li>
+        </ul>
+
+        <small class="copyRight text-white d-md-block text-md-center"
+          >© 2021. All Rights Reserved.</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      const elem = document.querySelector('input[name="datepicker"]');
+      const datepicker = new Datepicker(elem, {
+        autohide: true, // 是否在選擇日期後立即隱藏日期選擇器
+        nextArrow: ">>",
+        prevArrow: "<<",
+        buttonClass: "btn primary",
+        todayBtn: true, // 是否顯示今日按鈕
+        clearBtn: true, // 是否顯示清除按鈕
+      });
+    </script>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

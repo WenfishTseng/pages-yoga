@@ -1,0 +1,51 @@
+@mixin pc() {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin hide-text {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin link-hover {
+  transition: all 0.5s;
+  color: darken($color: $hover, $amount: 0);
+}
+
+@mixin bg-img-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin bg-img-contain {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin card-hover {
+  transform: translateY(-10px);
+  translate: 0.5s;
+}

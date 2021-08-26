@@ -1,0 +1,13 @@
+.logo {
+  @include hide-text;
+  @include bg-img-contain;
+  width: 96px;
+  height: 31px;
+  background-image: url("../images/footer-logo.png");
+}
+
+.main-logo {
+  width: 112px;
+  height: 48px;
+  background-image: url("../images/logo.png");
+}

@@ -1,0 +1,21 @@
+//首頁banner
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  @include mobile {
+    height: 36.375rem;
+  }
+}
+
+.copyRight {
+  @include mobile {
+    margin-top: -2.5rem;
+    padding-bottom: 2rem;
+  }
+}

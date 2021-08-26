@@ -1,0 +1,14 @@
+.link-hover-white {
+  &:hover {
+    color: $white;
+  }
+}
+.btn-light {
+  color: $info;
+  &-hover {
+    &:hover {
+      background-color: $secondary;
+      border: 1px solid transparent;
+    }
+  }
+}

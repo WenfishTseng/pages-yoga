@@ -1,0 +1,46 @@
+.border-radius-lg {
+  border-radius: $btn-border-radius-lg;
+}
+.bgCoverCenter {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgCoverContain {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fw-medium {
+  font-weight: $font-weight-medium;
+}
+
+.hideText {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.zIndexHigh {
+  z-index: 10;
+}
+
+.h-none {
+  height: none;
+}
+.h-md-50 {
+  @include mobile {
+    height: 50%;
+  }
+}
+
+.superCard {
+  @include desktop {
+    height: 40rem;
+  }
+  @include pc {
+    height: 38rem;
+  }
+}

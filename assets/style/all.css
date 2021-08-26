@@ -15235,14 +15235,13 @@ img {
   }
 }
 
-@media (min-width: 992px) {
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  .swiper-card {
-    height: 28rem;
-  }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-card {
+  height: 28rem;
 }
 
 .hero {

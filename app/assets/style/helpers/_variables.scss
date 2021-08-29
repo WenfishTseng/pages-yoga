@@ -284,6 +284,8 @@ $spacers: (
   //48
   14: $spacer * 4,
   //64
+  15: $spacer * 5,
+  //80
 ) !default;
 
 $negative-spacers: if(
@@ -434,6 +436,8 @@ $aspect-ratios: (
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
   "21x9": calc(9 / 21 * 100%),
+  "9x16": calc(16 / 9 * 100%),
+  "3x4": calc(4 / 3 * 100%),
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list

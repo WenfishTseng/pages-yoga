@@ -1,0 +1,286 @@
+---
+title: 填寫表單 - 瑜珈
+layout: ./app/layout-res.ejs
+engine: ejs
+current: reservation-form
+---
+
+<main>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-secondary text-center fs-5 pb-6">
+            <span class="text-info fs-6 pe-4">您選擇的是</span>首次體驗課程-基礎
+          </h3>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-15">
+          <form>
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                1. 是否接觸過瑜珈?
+              </legend>
+              <div class="col-12 d-flex">
+                <div class="form-check pe-9">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="yoga"
+                    id="yoga1"
+                    value="yogatrue"
+                    checked
+                  />
+                  <label class="form-check-label" for="yoga1"> 是 </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="yoga"
+                    id="yoga2"
+                    value="yogafalse"
+                  />
+                  <label class="form-check-label" for="yoga2"> 否 </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                2. 想改善的生活問題?
+              </legend>
+              <div class="col-12 d-flex">
+                <div class="form-check me-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox1"
+                    name="life"
+                    value="checkbox1"
+                  />
+                  <label class="form-check-label" for="checkbox1"
+                    >肌耐力不足</label
+                  >
+                </div>
+                <div class="form-check me-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox2"
+                    name="life"
+                    value="checkbox2"
+                  />
+                  <label class="form-check-label" for="checkbox2"
+                    >柔軟度不佳</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox3"
+                    name="life"
+                    value="checkbox3"
+                  />
+                  <label class="form-check-label" for="checkbox3">壓力大</label>
+                </div>
+              </div>
+              <div class="col-12 d-flex">
+                <div class="form-check me-9">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox4"
+                    name="life"
+                    value="checkbox4"
+                  />
+                  <label class="form-check-label" for="checkbox4"
+                    >姿勢不正</label
+                  >
+                </div>
+                <div class="form-check me-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox5"
+                    name="life"
+                    value="checkbox5"
+                  />
+                  <label class="form-check-label" for="checkbox5"
+                    >睡眠品質差</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkbox6"
+                    name="life"
+                    value="checkbox6"
+                  />
+                  <label class="form-check-label" for="checkbox6"
+                    >注意力不足</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                3. 每週累積運動量約為多少？
+              </legend>
+              <div class="col-12 d-flex">
+                <div class="form-check pe-9">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="sport"
+                    id="sport150"
+                    value="sport150"
+                    checked
+                  />
+                  <label class="form-check-label" for="sport150">
+                    150 分鐘以上
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="sport"
+                    id="sport75"
+                    value="sport75"
+                  />
+                  <label class="form-check-label" for="sport75">
+                    75~150 分鐘
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 d-flex">
+                <div class="form-check pe-9">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="sport"
+                    id="sport30"
+                    value="sport30"
+                    checked
+                  />
+                  <label class="form-check-label" for="sport30">
+                    30~75 分鐘
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="sport"
+                    id="sport29"
+                    value="sport29"
+                  />
+                  <label class="form-check-label" for="sport29">
+                    30 分鐘以下
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                4. 上課預約報到日
+              </legend>
+              <div class="col-12">
+                <p>
+                  若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！
+                </p>
+              </div>
+              <div class="col-6">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="MM/DD/YYYY"
+                  name="datepicker"
+                />
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                5. 填寫基本資料，完成預約後會寄送通知至電子信箱
+              </legend>
+              <div class="col-6">
+                <label class="form-check-label pb-2" for="inputName"
+                  >姓名</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="請輸入您的姓名"
+                />
+              </div>
+              <div class="col-6">
+                <label class="form-check-label pb-2" for="inputAge">年齡</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputAge"
+                  placeholder="請輸入您的年齡"
+                />
+              </div>
+
+              <div class="col-3 col-md-4 col-lg-3 pt-4">
+                <label class="form-check-label pb-2" for="gender">年齡</label>
+                <select class="form-select" name="gender" id="gender">
+                  <option>男生</option>
+                  <option>女生</option>
+                  <option>隱藏</option>
+                </select>
+              </div>
+
+              <div class="col-10"></div>
+
+              <div class="col-6 pt-4">
+                <label class="form-check-label pb-2" for="inputMail"
+                  >電子信箱</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputMail"
+                  placeholder="email@example.com"
+                />
+              </div>
+
+              <div class="col-6"></div>
+
+              <div class="col-6 pt-4">
+                <label class="form-check-label pb-2" for="inputPhone"
+                  >手機號碼</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputPhone"
+                  placeholder="0912-345-678"
+                />
+              </div>
+            </fieldset>
+
+            <input
+              type="button"
+              class="btn btn-secondary w-100 text-white"
+              value="送出"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

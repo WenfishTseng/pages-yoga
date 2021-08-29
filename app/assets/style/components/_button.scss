@@ -5,10 +5,13 @@
 }
 .btn-light {
   color: $info;
-  &-hover {
-    &:hover {
-      background-color: $secondary;
-      border: 1px solid transparent;
-    }
+  &:hover {
+    background-color: $primary;
+    border: 1px solid transparent;
+    color: $light;
   }
+}
+
+.btn-radius {
+  border-radius: $border-radius-lg;
 }

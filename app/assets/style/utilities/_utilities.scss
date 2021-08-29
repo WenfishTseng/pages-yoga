@@ -1,0 +1,14 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "viewport-height": (
+      responsive: true,
+      property: height,
+      class: vh,
+      values: (
+        80: 80vh,
+        100: 100vh,
+      ),
+    ),
+  )
+);

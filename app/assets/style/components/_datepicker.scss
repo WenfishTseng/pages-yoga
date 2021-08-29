@@ -1,0 +1,26 @@
+.primary {
+  color: $primary;
+}
+
+.datepicker {
+  border: 1px solid $primary;
+}
+
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background-color: $primary;
+}
+
+.datepicker-picker {
+  color: $primary;
+}
+
+.datepicker-controls {
+  justify-content: space-around;
+}
+
+.datepicker-footer button {
+  background: $white;
+  margin: 0.5rem 0;
+  padding: 0.25rem 1.25rem;
+}

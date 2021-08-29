@@ -108,7 +108,8 @@
       </div>
     </nav>
 
-    <%- contents %>
+    <!-- header -->
+    <%- include('layoutHeaderRes.ejs') %> <%- contents %>
 
     <footer class="footer bg-primary">
       <div class="container py-9">
@@ -193,6 +194,18 @@
           clickable: true,
         },
       });
+
+      const elem = document.querySelector('input[name="datepicker"]');
+      if (elem != null) {
+        const datepicker = new Datepicker(elem, {
+          autohide: true, // 是否在選擇日期後立即隱藏日期選擇器
+          nextArrow: ">>",
+          prevArrow: "<<",
+          buttonClass: "btn primary",
+          todayBtn: true, // 是否顯示今日按鈕
+          clearBtn: true, // 是否顯示清除按鈕
+        });
+      }
     </script>
 
     <script src="./assets/js/vendors.js"></script>

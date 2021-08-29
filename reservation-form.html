@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Reservation - Step2 - 瑜珈</title>
+    <title>填寫表單 - 瑜珈</title>
     <!-- material icon -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -42,9 +42,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <h1>
-          <a
-            href="newindex.html"
-            class="logo main-logo d-block d-lg-none navbar-brand"
+          <a href="#" class="logo main-logo d-block d-lg-none navbar-brand"
             >DOYOGA</a
           >
         </h1>
@@ -70,9 +68,7 @@
           id="navbarToggle"
         >
           <h1>
-            <a
-              href="newindex.html"
-              class="logo main-logo d-none d-lg-block navbar-brand"
+            <a href="#" class="logo main-logo d-none d-lg-block navbar-brand"
               >DOYOGA</a
             >
           </h1>
@@ -112,38 +108,47 @@
       </div>
     </nav>
 
-    
-<main>
-  <!-- BTN TITLE TAB 列 -->
-  <section class="pt-14">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="text-center text-primary fw-medium">立即預約</h2>
-        </div>
-      </div>
-      <div class="row pt-4 pb-9">
-        <div class="col-4 col-md-2 offset-md-3">
-          <a class="btn btn-light btn-radius w-100" href="#" role="button"
-            >選擇方案</a
-          >
-        </div>
-
-        <div class="col-4 col-md-2">
-          <a class="btn btn-light btn-radius w-100" href="#" role="button"
-            >填寫資料</a
-          >
-        </div>
-
-        <div class="col-4 col-md-2">
-          <a class="btn btn-light btn-radius w-100" href="#" role="button"
-            >完成預約</a
-          >
-        </div>
+    <!-- header -->
+    <section class="pt-14">
+  <div class="container">
+    <!-- BTN TITLE TAB 列 -->
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center text-primary fw-medium">立即預約</h2>
       </div>
     </div>
-  </section>
+    <div class="row pt-4 pb-9">
+      <div class="col-4 col-md-2 offset-md-3">
+        <a
+          class="btn btn-light btn-radius w-100"
+          href="reservation-choose.html"
+          role="button"
+          >選擇方案</a
+        >
+      </div>
 
+      <div class="col-4 col-md-2">
+        <a
+          class="btn btn-light btn-radius w-100"
+          href="reservation-form.html"
+          role="button"
+          >填寫資料</a
+        >
+      </div>
+
+      <div class="col-4 col-md-2">
+        <a
+          class="btn btn-light btn-radius w-100"
+          href="reservation-done.html"
+          role="button"
+          >完成預約</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<main>
   <section>
     <div class="container">
       <div class="row">
@@ -155,7 +160,7 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-6">
+        <div class="col-md-6 mb-15">
           <form>
             <fieldset class="row mb-9">
               <legend class="col-form-label col-12 pt-0 mb-2">
@@ -276,12 +281,12 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="yoga"
-                    id="yoga1"
-                    value="yogatrue"
+                    name="sport"
+                    id="sport150"
+                    value="sport150"
                     checked
                   />
-                  <label class="form-check-label" for="yoga1">
+                  <label class="form-check-label" for="sport150">
                     150 分鐘以上
                   </label>
                 </div>
@@ -290,11 +295,11 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="yoga"
-                    id="yoga2"
-                    value="yogafalse"
+                    name="sport"
+                    id="sport75"
+                    value="sport75"
                   />
-                  <label class="form-check-label" for="yoga2">
+                  <label class="form-check-label" for="sport75">
                     75~150 分鐘
                   </label>
                 </div>
@@ -304,12 +309,12 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="yoga"
-                    id="yoga1"
-                    value="yogatrue"
+                    name="sport"
+                    id="sport30"
+                    value="sport30"
                     checked
                   />
-                  <label class="form-check-label" for="yoga1">
+                  <label class="form-check-label" for="sport30">
                     30~75 分鐘
                   </label>
                 </div>
@@ -318,11 +323,11 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="yoga"
-                    id="yoga2"
-                    value="yogafalse"
+                    name="sport"
+                    id="sport29"
+                    value="sport29"
                   />
-                  <label class="form-check-label" for="yoga2">
+                  <label class="form-check-label" for="sport29">
                     30 分鐘以下
                   </label>
                 </div>
@@ -339,9 +344,83 @@
                 </p>
               </div>
               <div class="col-6">
-                <input type="text" placeholder="MM/DD/YYYY" name="datepicker" />
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="MM/DD/YYYY"
+                  name="datepicker"
+                />
               </div>
             </fieldset>
+
+            <fieldset class="row mb-9">
+              <legend class="col-form-label col-12 pt-0 mb-2">
+                5. 填寫基本資料，完成預約後會寄送通知至電子信箱
+              </legend>
+              <div class="col-6">
+                <label class="form-check-label pb-2" for="inputName"
+                  >姓名</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="請輸入您的姓名"
+                />
+              </div>
+              <div class="col-6">
+                <label class="form-check-label pb-2" for="inputAge">年齡</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputAge"
+                  placeholder="請輸入您的年齡"
+                />
+              </div>
+
+              <div class="col-3 col-md-4 col-lg-3 pt-4">
+                <label class="form-check-label pb-2" for="gender">年齡</label>
+                <select class="form-select" name="gender" id="gender">
+                  <option>男生</option>
+                  <option>女生</option>
+                  <option>隱藏</option>
+                </select>
+              </div>
+
+              <div class="col-10"></div>
+
+              <div class="col-6 pt-4">
+                <label class="form-check-label pb-2" for="inputMail"
+                  >電子信箱</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputMail"
+                  placeholder="email@example.com"
+                />
+              </div>
+
+              <div class="col-6"></div>
+
+              <div class="col-6 pt-4">
+                <label class="form-check-label pb-2" for="inputPhone"
+                  >手機號碼</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputPhone"
+                  placeholder="0912-345-678"
+                />
+              </div>
+            </fieldset>
+
+            <input
+              type="button"
+              class="btn btn-secondary w-100 text-white"
+              value="送出"
+            />
           </form>
         </div>
       </div>
@@ -435,14 +514,16 @@
       });
 
       const elem = document.querySelector('input[name="datepicker"]');
-      const datepicker = new Datepicker(elem, {
-        autohide: true, // 是否在選擇日期後立即隱藏日期選擇器
-        nextArrow: ">>",
-        prevArrow: "<<",
-        buttonClass: "btn primary",
-        todayBtn: true, // 是否顯示今日按鈕
-        clearBtn: true, // 是否顯示清除按鈕
-      });
+      if (elem != null) {
+        const datepicker = new Datepicker(elem, {
+          autohide: true, // 是否在選擇日期後立即隱藏日期選擇器
+          nextArrow: ">>",
+          prevArrow: "<<",
+          buttonClass: "btn primary",
+          todayBtn: true, // 是否顯示今日按鈕
+          clearBtn: true, // 是否顯示清除按鈕
+        });
+      }
     </script>
 
     <script src="./assets/js/vendors.js"></script>

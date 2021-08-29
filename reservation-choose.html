@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Reservation - 瑜珈</title>
+    <title>選擇課程 - 瑜珈</title>
     <!-- material icon -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -42,9 +42,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <h1>
-          <a
-            href="newindex.html"
-            class="logo main-logo d-block d-lg-none navbar-brand"
+          <a href="#" class="logo main-logo d-block d-lg-none navbar-brand"
             >DOYOGA</a
           >
         </h1>
@@ -70,9 +68,7 @@
           id="navbarToggle"
         >
           <h1>
-            <a
-              href="newindex.html"
-              class="logo main-logo d-none d-lg-block navbar-brand"
+            <a href="#" class="logo main-logo d-none d-lg-block navbar-brand"
               >DOYOGA</a
             >
           </h1>
@@ -112,36 +108,49 @@
       </div>
     </nav>
 
-    
+    <!-- header -->
+    <section class="pt-14">
+  <div class="container">
+    <!-- BTN TITLE TAB 列 -->
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center text-primary fw-medium">立即預約</h2>
+      </div>
+    </div>
+    <div class="row pt-4 pb-9">
+      <div class="col-4 col-md-2 offset-md-3">
+        <a
+          class="btn btn-light btn-radius w-100"
+          href="reservation-choose.html"
+          role="button"
+          >選擇方案</a
+        >
+      </div>
+
+      <div class="col-4 col-md-2">
+        <a
+          class="btn btn-light btn-radius w-100"
+          href="reservation-form.html"
+          role="button"
+          >填寫資料</a
+        >
+      </div>
+
+      <div class="col-4 col-md-2">
+        <a
+          class="btn btn-light btn-radius w-100"
+          href="reservation-done.html"
+          role="button"
+          >完成預約</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+ 
 <main>
   <section class="pt-14">
     <div class="container">
-      <!-- BTN TITLE TAB 列 -->
-      <div class="row">
-        <div class="col">
-          <h2 class="text-center text-primary fw-medium">立即預約</h2>
-        </div>
-      </div>
-      <div class="row pt-4 pb-9">
-        <div class="col-4 col-md-2 offset-md-3">
-          <a class="btn btn-light btn-radius w-100" href="#" role="button"
-            >選擇方案</a
-          >
-        </div>
-
-        <div class="col-4 col-md-2">
-          <a class="btn btn-light btn-radius w-100" href="#" role="button"
-            >填寫資料</a
-          >
-        </div>
-
-        <div class="col-4 col-md-2">
-          <a class="btn btn-light btn-radius w-100" href="#" role="button"
-            >完成預約</a
-          >
-        </div>
-      </div>
-
       <!-- 課程選擇 -->
       <div class="row">
         <div class="col-lg-4 pb-6">
@@ -226,7 +235,7 @@
       </div>
       <div class="row flex-md-nowrap flex-lg-wrap overflow-auto pb-14 px-7">
         <!-- class  -->
-        <div class="col-md-6 col-lg-4 pb-md-6">
+        <div class="col-md-6 col-lg-4 pb-6">
           <div
             class="
               card
@@ -265,7 +274,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 pb-md-6">
+        <div class="col-md-6 col-lg-4 pb-6">
           <div class="card text-white bg-secondary px-2 shadow">
             <div class="card-body">
               <h3
@@ -467,14 +476,16 @@
       });
 
       const elem = document.querySelector('input[name="datepicker"]');
-      const datepicker = new Datepicker(elem, {
-        autohide: true, // 是否在選擇日期後立即隱藏日期選擇器
-        nextArrow: ">>",
-        prevArrow: "<<",
-        buttonClass: "btn primary",
-        todayBtn: true, // 是否顯示今日按鈕
-        clearBtn: true, // 是否顯示清除按鈕
-      });
+      if (elem != null) {
+        const datepicker = new Datepicker(elem, {
+          autohide: true, // 是否在選擇日期後立即隱藏日期選擇器
+          nextArrow: ">>",
+          prevArrow: "<<",
+          buttonClass: "btn primary",
+          todayBtn: true, // 是否顯示今日按鈕
+          clearBtn: true, // 是否顯示清除按鈕
+        });
+      }
     </script>
 
     <script src="./assets/js/vendors.js"></script>

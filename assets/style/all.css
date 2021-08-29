@@ -7930,6 +7930,14 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: calc(9 / 21 * 100%);
 }
 
+.ratio-9x16 {
+  --bs-aspect-ratio: calc(16 / 9 * 100%);
+}
+
+.ratio-3x4 {
+  --bs-aspect-ratio: calc(4 / 3 * 100%);
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -15552,14 +15560,6 @@ img {
      object-position: center;
 }
 
-.card-img-xl {
-  height: 80vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
 .card-image {
   width: 6rem;
   height: 6rem;
@@ -15571,17 +15571,25 @@ img {
   padding: 1.5rem;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-card {
-  height: 28rem;
+@media (min-width: 992px) {
+  .swiper {
+    overflow: hidden;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-card {
+    height: 28rem;
+  }
 }
 
 .primary {
   color: #907a7b;
+}
+
+.datepicker {
+  border: 1px solid #907a7b;
 }
 
 .datepicker-cell.selected,

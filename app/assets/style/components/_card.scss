@@ -21,13 +21,18 @@
       }
     }
     &-m {
-      height: 12.5rem;
+      height: 12.25rem;
       object-fit: cover;
-      // 順序 : x軸 y軸
-      object-position: 50% 80%;
+      object-position: 50% 65%;
     }
     &-l {
       height: 15rem;
+      object-fit: cover;
+      // 順序 : x軸 y軸
+      object-position: center;
+    }
+    &-xl {
+      height: 21.25rem;
       object-fit: cover;
       // 順序 : x軸 y軸
       object-position: center;

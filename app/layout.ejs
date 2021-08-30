@@ -75,7 +75,7 @@
 
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link px-lg-4" href="#">課程介紹</a>
+              <a class="nav-link px-lg-4" href="course.html">課程介紹</a>
             </li>
             <li class="nav-item">
               <a class="nav-link px-lg-4" href="#">瑜珈空間</a>
@@ -92,7 +92,8 @@
             >
               立即預約
             </a>
-            <button
+            <a
+              href="#"
               class="
                 btn btn-outline-primary
                 border-radius-lg
@@ -102,11 +103,42 @@
               type="button"
             >
               聯絡我們
-            </button>
+            </a>
           </form>
         </div>
       </div>
     </nav>
+
+    <ul
+      class="
+        list-unstyled
+        d-lg-flex
+        flex-column
+        socialMedia__list
+        position-fixed
+        top-50
+        end-0
+        translate-middle
+        d-none
+        zIndexHigh
+      "
+    >
+      <li>
+        <a class="socialMedia__list__item d-lg-block mb-2 fs-lg" href="#"
+          ><i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="socialMedia__list__item d-lg-block mb-2 fs-lg" href="#"
+          ><i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a class="socialMedia__list__item d-lg-block mb-2 fs-lg" href="#"
+          ><i class="fab fa-line"></i>
+        </a>
+      </li>
+    </ul>
 
     <%- contents %>
 
@@ -186,12 +218,21 @@
 
     <script>
       const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1.5,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            grid: {
+              rows: 2,
+            },
+          },
+          768: {
+            slidesPerView: 1.5,
+            grid: {
+              rows: 1,
+            },
+          },
         },
+        spaceBetween: 30,
       });
     </script>
 

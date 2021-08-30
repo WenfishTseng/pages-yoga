@@ -1,12 +1,16 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+
+// 引入 bootstrap 5 的 utilities
+@import "../../../node_modules/bootstrap/scss/utilities";
+// 自己的 utilities
+@import "./utilities/utilities";
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import "./helpers/mixin";
 @import "./base/base";
 @import "./helpers/util";
-
-@import "./utilities/utilities";
 
 @import "./components/logo";
 @import "./components/button";

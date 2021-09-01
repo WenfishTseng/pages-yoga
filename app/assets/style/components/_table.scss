@@ -1,0 +1,13 @@
+.table {
+  th,
+  td {
+    border-bottom: 1px solid $primary;
+    padding: 0.5rem;
+  }
+  thead th {
+    text-align: center;
+  }
+  tr th:first-child {
+    border-right: 1px solid $primary;
+  }
+}

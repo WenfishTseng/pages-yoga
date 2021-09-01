@@ -1,0 +1,41 @@
+// 精心設計，多元課程
+.course {
+  &__container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin: 0 auto;
+    @include phone {
+      max-width: 540px;
+    }
+    @include mobile {
+      max-width: 720px;
+    }
+    @include desktop {
+      max-width: 100%;
+    }
+  }
+  &__title {
+    @include mobile {
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .swiper-wrapper {
+    flex-wrap: wrap !important;
+    @include desktop {
+      flex-wrap: nowrap !important;
+    }
+  }
+
+  .swiper-slide {
+    width: 48%;
+    margin: 0.5rem 1%;
+    @include desktop {
+      width: 100%;
+    }
+  }
+}

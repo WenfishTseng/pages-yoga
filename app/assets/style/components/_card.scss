@@ -6,7 +6,6 @@
 
   &-title {
     font-size: 1.25rem;
-    font-weight: normal;
     margin-bottom: 0.25rem;
   }
   &-img {
@@ -20,22 +19,92 @@
         border-radius: 1rem 1rem 0 0;
       }
     }
-    &-m {
+    &-12 {
       height: 12.25rem;
       object-fit: cover;
       object-position: 50% 65%;
     }
-    &-l {
+    &-15 {
       height: 15rem;
       object-fit: cover;
       // 順序 : x軸 y軸
       object-position: center;
     }
-    &-xl {
+    &-21 {
       height: 21.25rem;
       object-fit: cover;
       // 順序 : x軸 y軸
       object-position: center;
+    }
+
+    &-sm {
+      object-position: center;
+      object-fit: cover;
+      height: 13.125rem;
+      @include mobile {
+        height: 7.25rem;
+      }
+      @include desktop {
+        height: 12.875rem;
+      }
+    }
+
+    &-s {
+      object-position: center;
+      object-fit: cover;
+      height: 13.125rem;
+      @include mobile {
+        height: 16.625rem;
+      }
+      @include desktop {
+        height: 27.75rem;
+      }
+    }
+
+    &-m {
+      height: 10.375rem;
+      object-position: center;
+      object-fit: cover;
+      @include mobile {
+        height: 26.125rem;
+      }
+    }
+
+    &-l {
+      height: 12.25rem;
+      object-position: center;
+      object-fit: cover;
+      @include mobile {
+        height: 10rem;
+      }
+      @include desktop {
+        height: 12.25rem;
+      }
+    }
+
+    &-xl {
+      height: 21.875rem;
+      object-position: center;
+      object-fit: cover;
+      @include mobile {
+        height: 13.215rem;
+      }
+      @include desktop {
+        height: 21.875rem;
+      }
+    }
+
+    &-xxl {
+      height: 10.38rem;
+      object-fit: cover;
+      // 順序 : x軸 y軸
+      object-position: center;
+      @include mobile {
+        height: 9.38rem;
+      }
+      @include desktop {
+        height: 27.8rem;
+      }
     }
   }
   &-image {
@@ -45,5 +114,20 @@
   }
   &-body {
     padding: 1.5rem;
+  }
+  &-height {
+    &-26 {
+      height: 26.125rem;
+    }
+  }
+  &-map {
+    height: 22.5rem;
+    object-fit: cover;
+    @include mobile {
+      height: 20rem;
+    }
+    @include desktop {
+      height: 12.25rem;
+    }
   }
 }

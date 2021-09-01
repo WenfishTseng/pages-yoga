@@ -3,12 +3,20 @@
     color: $white;
   }
 }
+.btn-secondary {
+  color: $white;
+  &:hover {
+    background-color: $primary !important;
+    border: 1px solid transparent;
+    color: $white;
+  }
+}
 .btn-light {
   color: $info;
   &:hover {
-    background-color: $primary;
+    background-color: $secondary !important;
     border: 1px solid transparent;
-    color: $light;
+    color: $white;
   }
 }
 

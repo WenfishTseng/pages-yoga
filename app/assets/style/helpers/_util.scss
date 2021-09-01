@@ -48,3 +48,22 @@
 .start-15 {
   left: 15%;
 }
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.width-lg {
+  width: 62rem;
+  margin: 0 auto;
+}
+
+.hide-scroll-bar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

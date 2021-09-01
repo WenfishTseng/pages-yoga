@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -42,7 +42,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <h1>
-          <a href="#" class="logo main-logo d-block d-lg-none navbar-brand"
+          <a
+            href="index.html"
+            class="logo main-logo d-block d-lg-none navbar-brand"
             >DOYOGA</a
           >
         </h1>
@@ -68,7 +70,9 @@
           id="navbarToggle"
         >
           <h1>
-            <a href="#" class="logo main-logo d-none d-lg-block navbar-brand"
+            <a
+              href="index.html"
+              class="logo main-logo d-none d-lg-block navbar-brand"
               >DOYOGA</a
             >
           </h1>
@@ -78,10 +82,10 @@
               <a class="nav-link px-lg-4" href="course.html">課程介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-lg-4" href="#">瑜珈空間</a>
+              <a class="nav-link px-lg-4" href="surroundings.html">瑜珈空間</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-lg-4" href="#">當月課表</a>
+              <a class="nav-link px-lg-4" href="curriculum.html">當月課表</a>
             </li>
           </ul>
           <form class="my-lg-3">
@@ -93,7 +97,7 @@
               立即預約
             </a>
             <a
-              href="#"
+              href="contact.html"
               class="
                 btn btn-outline-primary
                 border-radius-lg
@@ -215,26 +219,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
-
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        breakpoints: {
-          320: {
-            slidesPerView: 2,
-            grid: {
-              rows: 2,
-            },
-          },
-          768: {
-            slidesPerView: 1.5,
-            grid: {
-              rows: 1,
-            },
-          },
-        },
-        spaceBetween: 30,
-      });
-    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

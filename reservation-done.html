@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -42,7 +42,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <h1>
-          <a href="#" class="logo main-logo d-block d-lg-none navbar-brand"
+          <a
+            href="index.html"
+            class="logo main-logo d-block d-lg-none navbar-brand"
             >DOYOGA</a
           >
         </h1>
@@ -68,20 +70,22 @@
           id="navbarToggle"
         >
           <h1>
-            <a href="#" class="logo main-logo d-none d-lg-block navbar-brand"
+            <a
+              href="index.html"
+              class="logo main-logo d-none d-lg-block navbar-brand"
               >DOYOGA</a
             >
           </h1>
 
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link px-lg-4" href="#">課程介紹</a>
+              <a class="nav-link px-lg-4" href="course.html">課程介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-lg-4" href="#">瑜珈空間</a>
+              <a class="nav-link px-lg-4" href="surroundings.html">瑜珈空間</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-lg-4" href="#">當月課表</a>
+              <a class="nav-link px-lg-4" href="curriculum.html">當月課表</a>
             </li>
           </ul>
           <form class="my-lg-3">
@@ -92,7 +96,8 @@
             >
               立即預約
             </a>
-            <button
+            <a
+              href="contact.html"
               class="
                 btn btn-outline-primary
                 border-radius-lg
@@ -102,7 +107,7 @@
               type="button"
             >
               聯絡我們
-            </button>
+            </a>
           </form>
         </div>
       </div>
@@ -190,12 +195,12 @@
 
       <!-- 上課注意 -->
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-8 mb-2">
+        <div class="col-lg-4 col-md-8 mt-6 mb-2">
           <h2 class="fs-5 text-primary text-center">上課注意事項</h2>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-8 mb-lg-15">
+        <div class="col-lg-4 col-md-8 mb-15">
           <p class="text-primary mb-9">
             第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水
             .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！
@@ -286,17 +291,8 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1.5,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-
       const elem = document.querySelector('input[name="datepicker"]');
       if (elem != null) {
         const datepicker = new Datepicker(elem, {
